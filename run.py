@@ -37,7 +37,9 @@ def wechat_auth():
     try:
       wechat.parse_data(body)
       tp.printtest(wechat.message.get_text)
-      tp.printtest("/n")
+      tp.printtest("--------------------------------")
+      tp.printtest(" ")
+      
 #      tp.printer.cut()
       return make_response("success")
     except ParseError:
